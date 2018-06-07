@@ -3,8 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+    $(document).ready(function(){
+
+    })
+    </script>
   </head>
   <body>
-    <label>ID: </label>
+    <!-- 회원가입 폼  -->
+    <form name="form" method="post">
+      <p>
+        <label>ID:  </label>
+        <input type="text" placeholder="아이디를 입력해주세요"/>
+      </p>
+      <p>
+        <label>PW: </label>
+        <input type="password" placeholder="비밀번호를 입력해주세요"/>
+      </p>
+      <input type="submit" value="회원 가입" name="signup"/>
+      <input type="reset" value="내용 삭제" name="reset"/>
+    </form>
   </body>
 </html>
