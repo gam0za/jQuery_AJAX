@@ -14,3 +14,7 @@ jQuery는 모든 브라우저에서 동작하는 클라이언트 자바스크립
 <http://jquery.com/>
 
 jQuery는 두 가지 방법으로 사용할 수 있다. 첫번 째 방법은 CDN (Content Delivery Network) 호스트를 사용하는 방법이 있고, 두번 째로 직접 내려받아 사용하는 방법이 있다. 
+
+나는 Node.JS를 이용하여 jQuery를 다운받았다. 
+
+<pre><code>npm install jQuery var $ =require('jQuery');</code></pre>>
