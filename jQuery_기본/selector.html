@@ -6,11 +6,25 @@
 	<script>
 		//문서가 준비되면 매개변수로 넣은 콜백함수 실행
 		$(document).ready(function(){
-			
+			// 1. 전체 선택자
+			$('*').css('background-color','pink');
+
+			// 2. 태그 선택자
+			$('h1').css('color','hotpink');
+
+			// 3. 아이디 선택자
+			$('#target').css('background-color','skyblue');
+
+			// 4. 클래스 선택자
+			$('.classname').css('color','blue');
+			$('.classname.classname2').css('color','red');
 		})
 	</script>
 </head>
 <body>
-
+<h1>태그 선택자</h1>
+<h2 id="target">아이디 선택자</h2>
+<h3 class="classname">클래스 선택자</h3>
+<h4 class="classname classname2">클래스 선택자2</h4>
 </body>
 </html>

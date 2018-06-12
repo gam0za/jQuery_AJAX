@@ -26,11 +26,46 @@ var $ =require('jQuery');</code></pre>
 
 ### 1. 기본 선택자
 
-<pre><code>$('h1').css('color','red');</code></pre>
-
 * 전체 선택자
-
 *를 사용한 선택자이다. 
+<pre><code>$('*').css('color','red');</code></pre>
 
 
 *  태그 선택자
+특정한 태그를 선택하는 선택자이다. 태그의 이름을 그대로 사용한다.
+<pre><code>$('h1').css('color','red');</code></pre>
+
+
+* 아이디 선택자
+특정한 id 속성이 있는 문서 객체를 선택한다. 
+<pre><code>$('#idname').css('color','red');</code></pre>
+
+또는 h1 태그 내의 특정 id 
+<pre><code>$('h1#idname').css('color','red');</code></pre>
+
+
+* 클래스 선택자
+특정한 class 속성이 있는 문서 객체를 선택한다.
+<pre><code>$('.classname').css('color','red');</code></pre>
+
+두 클래스 모두 갖는 문서 객체 선택 시
+<pre><code>$('.classname1.classname2').css('color','red');</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
