@@ -29,6 +29,7 @@
   </script></code></pre>
 
 
+## [결과화면]
   ![Alt text](/문서객체조작/images/selectMyDog.PNG)
 
 
