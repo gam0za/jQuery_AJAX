@@ -227,6 +227,7 @@ $('h3').css('color',function(index){
 
 문서 객체 내부를 비운다.
 
+***
 
 # 11. 문서 객체 생성
 
@@ -235,3 +236,20 @@ $('h3').css('color',function(index){
 ## 2. $('<h1태그></h1태그>').attr('width',100).appendTo('body');
 
 ## 3. $('<h1태그></h1태그>',{width:100,  height:50}).appendTo('body');
+
+***
+
+# 12. 문서 객체 이동
+
+first() 메서드를 사용한다면, 앞쪽에 태그 추가
+
+***
+
+# 13. 문서 객체 복제
+
+clone() 사용
+
+<pre><code>$('body').append($('h3').clone());</code></pre>
+
+## [결과화면]
+![Alt text](/문서객체조작/images/clone.PNG)
