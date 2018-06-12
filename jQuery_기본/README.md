@@ -232,12 +232,12 @@ options.valueB=options.valueB || 20;
 options.valueC=options.valueC || 30;</code></pre>
 
 
-    # 5. jQuery 충돌 방지
+# 5. jQuery 충돌 방지
 
     jQuery 이외에도 여러가지 자바스크립트 프레임워크가 있다. 예를 들어, Prototype 프레임워크에서도 $ 식별자를 사용한다. 이를 방지하기 위해 충돌 방지가 필요하다.
 
 
-    ## 5.1. noConflict() 메서드
+## 5.1. noConflict() 메서드
 
     <pre><code><script>
     $.noConflict();
