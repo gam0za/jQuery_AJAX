@@ -169,7 +169,7 @@ jQuery로 배열을 관리할 때는 **each()메서드** 를 사용한다. 두 �
 적은 수의 속성을 추가할 때는 문제가 없지만 많은 수의 속성을 추가하고 싶을 땐, **$.extend()** 메서드가 each()보다 더 효율적이다. extend()메서드는 두 번째 매개변수에 입력한 객체를 기존 객체에 합쳐지도록 한다.
 
 
-<pre><code>    <script>
+<pre><code><script>
     $(document).ready(function(){
       var object={name:'Jinyoung Kim'};
 
