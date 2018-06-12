@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+    $(document).ready(function(){
+      // addClass
+      $('h1').addClass(function(index){
+        return 'class'+index;
+      })
+
+      // removeClass
+      $('h1').removeClass(function(index){
+        return 'class1';
+      })
+
+      // attr
+      var id=$('h2').attr('id');
+      alert(id);
+
+      // attr-setter1
+      $('div').attr('width','100');
+
+      // attr-setter2
+      $('div').attr('width',function(index){
+        return (index+1)*100;
+      });
+
+      // attr-setter3
+      $('div').attr({
+        width:function(index){
+          return (index+1)*100;
+        },
+        height: 100
+      });
+
+      // css-setter1
+      $('h3').css('color','red');
+
+      // css-setter2
+      var color=['red','blue','green'];
+      $('h3').css('color',function(index){
+        return color[index];
+      });
+
+      // css-setter3
+      $('h3').css({
+        color:function(index){
+          return color[index];
+        },
+        backgroundColor:'hotpink'
+      });
+    });
+    </script>
+    <title>문서 객체 조작</title>
+  </head>
+  <body>
+    <h1 class="item">Header-1</h1>
+    <h1 class="item">Header-2</h1>
+    <h1 class="item">Header-3</h1>
+
+    <div class="div">
+    <h2 id="hello">Hello Jinyoung</h2>
+    </div>
+
+    <h3>Hello Jinyoung2</h3>
+  </body>
+</html>

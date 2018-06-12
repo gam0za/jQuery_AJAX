@@ -1,6 +1,6 @@
 # <문서 객체 선택과 탐색>
 
-함수를 활용해 문서 객체를 선택하는 방법을 추가적으로 공부한다.
+함수를 활용해 문서 객체를 선택하는 방법을 추가적으로 공부한다. jQuery가 제공하는 함수를 활용한다.
 
 # 1. 기본 필터 메서드
 
@@ -66,7 +66,7 @@ filter() 메서드를 응용
 
 ## find() 메서드
 
-<pre><code>var xmlDoc=$.parseXML(xml); 
+<pre><code>var xmlDoc=$.parseXML(xml);
 $(xmlDoc).find('friend').each(function(index){});</code></pre>
 
 each() 메서드 안에서 find() 메서드를 한 번 더 사용해 각각의 데이터를 추출한다.
@@ -94,3 +94,91 @@ each() 메서드 안에서 find() 메서드를 한 번 더 사용해 각각의 �
 
 
 # <문서 객체 조작>
+
+# 1. 문서 객체의 클래스 속성 추가
+
+## addClass()
+
+문서 객체의 클래스 속성을 추가한다.
+
+<pre><code>$(document).ready(function(){
+      $('h1').addClass(function(index){
+        return 'class'+index;
+      })
+    })</code></pre>
+
+***
+
+# 2. 문서 객체의 클래스 속성 제거
+
+## removeClass()
+
+이 메서드의 매개변수에 아무것도 입력하지 않으면, 문서 객체의 모든 클래스를 제거한다.
+
+***
+
+# 3. 문서 객체의 속성 검사 (Getter)
+
+## attr()
+
+***
+
+# 4. 문서 객체의 속성 추가 (Setter)
+
+
+## 1. $(selector).attr(name,value);
+
+<pre><code>$('div').attr('width','100');</code></pre>
+
+## 2. $(selector).attr(name,function(index,attr){});
+
+<pre><code>$('div').attr('width',function(index){
+    return (index+1)*100;
+  });</code></pre>
+
+
+## 3. $(selector).attr(object);
+
+<pre><code>$('div').attr({
+  width:function(index){
+    return (index+1)*100;
+  },
+  height: 100
+});</code></pre>
+
+
+***
+
+# 5. 문서 객체의 속성 제거
+
+## removeAttre(name)
+
+
+***
+
+# 6. 문서 객체의 스타일 검사
+
+## css()
+
+
+# 7. 문서 객체의 스타일 추가
+
+## 1. $(selector).css(name,value);
+
+<pre><code>$('h3').css('color','red');</code></pre>
+
+## 2. $(selector).css(name,function(index,style){});
+
+<pre><code>var color=['red','blue','green'];
+$('h3').css('color',function(index){
+  return color[index];
+});</code></pre>
+
+## 3. $(selector).css(object);
+
+<pre><code>$('h3').css({
+  color:function(index){
+    return color[index];
+  },
+  backgroundColor:'hotpink'
+});</code></pre>
