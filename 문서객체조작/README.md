@@ -217,3 +217,21 @@ $('h3').css('color',function(index){
 
 
 # 10. 문서 객체 제거
+
+## remove()
+
+문서 객체를 제거한다.
+
+
+## empty()
+
+문서 객체 내부를 비운다.
+
+
+# 11. 문서 객체 생성
+
+## 1. $('<h1>Hello World</h1>').appendTo('body');
+
+## 2. $('<h1></h1>').attr('width',100).appendTo('body');
+
+## 3. $('<h1></h1>',{width:100,  height:50}).appendTo('body');
