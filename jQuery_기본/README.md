@@ -17,4 +17,5 @@ jQuery는 두 가지 방법으로 사용할 수 있다. 첫번 째 방법은 CDN
 
 나는 Node.JS를 이용하여 jQuery를 다운받았다. 
 
-<pre><code>npm install jQuery var $ =require('jQuery');</code></pre>>
+<pre><code>npm install jQuery 
+var $ =require('jQuery');</code></pre>
