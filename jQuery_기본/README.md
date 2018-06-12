@@ -28,8 +28,9 @@ var $ =require('jQuery');</code></pre>
 
 <pre><code>$('h1').css('color','red');</code></pre>
 
-1.1. 전체 선택자
+* 전체 선택자
 
 *를 사용한 선택자이다. 
 
-1.2. 태그 선택자
+
+*  태그 선택자
