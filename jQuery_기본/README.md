@@ -29,21 +29,21 @@ var $ =require('jQuery');</code></pre>
 
 
 
-### 전체 선택자
+### * 전체 선택자
 
 *를 사용한 선택자이다.
 <pre><code>$('*').css('color','red');</code></pre>
 
 
 
-###  태그 선택자
+### * 태그 선택자
 
 특정한 태그를 선택하는 선택자이다. 태그의 이름을 그대로 사용한다.
 <pre><code>$('h1').css('color','red');</code></pre>
 
 
 
-### 아이디 선택자
+### * 아이디 선택자
 
 특정한 id 속성이 있는 문서 객체를 선택한다.
 <pre><code>$('#idname').css('color','red');</code></pre>
@@ -53,7 +53,7 @@ var $ =require('jQuery');</code></pre>
 
 
 
-### 클래스 선택자
+### * 클래스 선택자
 
 특정한 class 속성이 있는 문서 객체를 선택한다.
 <pre><code>$('.classname').css('color','red');</code></pre>
@@ -63,7 +63,7 @@ var $ =require('jQuery');</code></pre>
 
 
 
-### 자손 선택자와 후손 선택자
+### * 자손 선택자와 후손 선택자
 
 자손 선택자와 후손 선택자는 기본 선택자의 앞에 붙여 사용한다.기본 선택자의 범위를 제한한다.
 <pre><code>$('div>*').css('color','purple');//자손 선택자
@@ -102,7 +102,7 @@ $('div ul').css('color','green');//후손 선택자</code></pre>
 
 
 
-### 입력 양식 필터 선택자
+### * 입력 양식 필터 선택자
 
 **요소:button** : input 태그 중 type 속성이 button인 문서 객체와 button 태그를 선택한다. button 대신 다른 속성을 넣어도 된다.
 
@@ -112,7 +112,7 @@ $('div ul').css('color','green');//후손 선택자</code></pre>
 
 
 
-### 위치 필터 선택자
+### * 위치 필터 선택자
 
 **요소:odd** : 홀수 번째에 위치한 문서 객체 선택
 
@@ -122,7 +122,7 @@ $('div ul').css('color','green');//후손 선택자</code></pre>
 
 
 
-### 함수 필터 선택자
+### * 함수 필터 선택자
 
 **요소:contains(문자열)** : 특정 문자열 포함
 
