@@ -10,6 +10,9 @@ jQuery는 모든 브라우저에서 동작하는 클라이언트 자바스크립
 
 추가적으로, jQuery를 사용한다면 모든 브라우저에서 동작하는 이벤트에 쉽게 연결할 수 있다.
 
+
+***
+
 # 2. 다운로드
 <http://jquery.com/>
 
@@ -20,6 +23,9 @@ Node.JS를 이용하여 jQuery를 다운받을 수도 있다.
 
 <pre><code>npm install jQuery
 var $ =require('jQuery');</code></pre>
+
+
+***
 
 # 3. 선택자
 선택자는 jQuery에서 가장 중요한 역할을 한다.
@@ -141,7 +147,7 @@ $('div ul').css('color','green');//후손 선택자</code></pre>
 **요소:nth-child(3n+1)** : 3n+1번째에 위치 (1, 4, 7, ...)
 
 
-
+***
 
 
 # 4. 배열 관리
@@ -230,6 +236,7 @@ jQuery로 배열을 관리할 때는 **each()메서드** 를 사용한다. 두 �
 options.valueB=options.valueB || 20;
 options.valueC=options.valueC || 30;</code></pre>
 
+***
 
 # 5. jQuery 충돌 방지
 
