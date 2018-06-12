@@ -1,0 +1,29 @@
+<!-- 문서 객체 선택과 탐색  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>문서 객체 선택과 탐색</title>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+    $(document).ready(function(){
+
+      // filter()메서드의 매개변수로 함수를 넣을 경우
+      $('h3').filter(function(index){
+        return index%3==0;
+      }).css({
+        backgroundColor:'skyblue',
+        color:'blue'
+      })
+
+    })
+    </script>
+  </head>
+  <body>
+    <h2>나에게 강아지가 생긴다면 이름은 뭘로 지을까?</h2>
+      <h3>1. 브리트니 점례</h3>
+      <h3>2. 큐리어스 민호</h3>
+      <h3>3. 엘리자베스 순자</h3>
+  </body>
+</html>

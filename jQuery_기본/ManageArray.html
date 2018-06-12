@@ -1,3 +1,6 @@
+<!-- 배열 관리 -->
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,7 +22,7 @@
           {name:'Gamza', like:'Beer'},
           {name:'JYK', like:'Chicken'}
         ];
-        // 1. each 메서드 사용
+        // 1. each 메서드 사용 (JavaScript 방식)
         $.each(array,function(index,item){
           var output='';
           output+='<h1>'+item.name+'</h1>';
@@ -28,7 +31,7 @@
           document.body.innerHTML += output;
         });
 
-        // 2. $(selector).each() 메서드
+        // 2. $(selector).each() 메서드 (jQuery 방식)
         $('h3').each(function(index,item){
           $(item).addClass('high-light-'+index);
         })
