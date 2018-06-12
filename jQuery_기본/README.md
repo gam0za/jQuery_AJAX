@@ -247,8 +247,17 @@ J('h1').css('color','pink');
 </script></code></pre>
 
 
-==========================================================
+***
 
 ### selector.html
 
 ![Alt text](/jQuery_기본/images/selector.PNG)
+
+
+### manageArray.html
+
+![Alt text](/jQuery_기본/images/manageArray.PNG)
+
+### collisionPrevent.html
+
+![Alt text](/jQuery_기본/images/collisionPrevent.PNG)
