@@ -238,11 +238,17 @@ jQuery 이외에도 여러가지 자바스크립트 프레임워크가 있다. �
 
 ## 5.1. noConflict() 메서드
 
-    <pre><code><script>
-    $.noConflict();
-    var J = jQuery; //변수에 저장
+<pre><code><script>
+$.noConflict();
+var J = jQuery; //변수에 저장
+J(document).ready(function(){
+J('h1').css('color','pink');
+})
+</script></code></pre>
 
-    J(document).ready(function(){
-      J('h1').css('color','pink');
-    })
-    </script></code></pre>
+
+==========================================================
+
+### selector.html
+
+![Alt text](/jQuery_기본/images/selector.PNG)
