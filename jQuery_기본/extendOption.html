@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>객체확장을 이용한 옵션 객체 보완</title>
+  <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+  <script>
+    function test(options){
+      options= $.extend({
+        valueA: 10,
+        valueB: 20,
+        valueC: 30
+      },options);
+
+      // options.valueA=options.valueA || 10;
+      // options.valueB=options.valueB || 20;
+      // options.valueC=options.valueC || 30;
+
+      alert('A: '+options.valueA+' B: '+options.valueB+' C: '+options.valueC);
+    }
+
+    test({valueA:22, valueB:33});
+
+  </script>
+  </head>
+  <body>
+
+  </body>
+</html>

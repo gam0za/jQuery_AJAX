@@ -1,4 +1,4 @@
-# jQuery 기본
+# <jQuery 기본>
 
 # 1. 개요
 jQuery는 모든 브라우저에서 동작하는 클라이언트 자바스크립트 라이브러리이다.
@@ -66,6 +66,8 @@ var $ =require('jQuery');</code></pre>
 ### * 자손 선택자와 후손 선택자
 
 자손 선택자와 후손 선택자는 기본 선택자의 앞에 붙여 사용한다.기본 선택자의 범위를 제한한다.
+
+
 <pre><code>$('div>*').css('color','purple');//자손 선택자
 $('div ul').css('color','green');//후손 선택자</code></pre>
 
@@ -204,7 +206,30 @@ jQuery로 배열을 관리할 때는 **each()메서드** 를 사용한다. 두 �
     </script></code></pre>
 
 
+## 4.3.1 extend() 를 이용한 옵션 객체 보완
 
+
+<pre><code><script>
+  function test(options){
+    options= $.extend({
+      valueA: 10,
+      valueB: 20,
+      valueC: 30
+    },options);
+
+    alert('A: '+options.valueA+' B: '+options.valueB+' C: '+options.valueC);
+  }
+
+  test({valueA:22, valueB:33});
+
+</script></code></pre>
+
+
+위의 코드는 이 코드를 extend 를 이용하여 보완한 것이다.
+
+<pre><code>options.valueA=options.valueA || 10;
+options.valueB=options.valueB || 20;
+options.valueC=options.valueC || 30;</code></pre>
 
 
     # 5. jQuery 충돌 방지
