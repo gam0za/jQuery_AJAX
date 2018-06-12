@@ -19,3 +19,4 @@ jQuery는 두 가지 방법으로 사용할 수 있다. 첫번 째 방법은 CDN
 
 <pre><code>npm install jQuery 
 var $ =require('jQuery');</code></pre>
+
