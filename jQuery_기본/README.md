@@ -15,8 +15,21 @@ jQuery는 모든 브라우저에서 동작하는 클라이언트 자바스크립
 
 jQuery는 두 가지 방법으로 사용할 수 있다. 첫번 째 방법은 CDN (Content Delivery Network) 호스트를 사용하는 방법이 있고, 두번 째로 직접 내려받아 사용하는 방법이 있다. 
 
-나는 Node.JS를 이용하여 jQuery를 다운받았다. 
+Node.JS를 이용하여 jQuery를 다운받을 수도 있다.
+<https://www.npmjs.com/package/jQuery/>
 
 <pre><code>npm install jQuery 
 var $ =require('jQuery');</code></pre>
 
+## 3. 선택자
+선택자는 jQuery에서 가장 중요한 역할을 한다.
+
+1. 기본 선택자
+
+<pre><code>$('h1').css('color','red');</code></pre>
+
+1.1. 전체 선택자
+
+*를 사용한 선택자이다. 
+
+1.2. 태그 선택자
