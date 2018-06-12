@@ -196,7 +196,6 @@ jQuery로 배열을 관리할 때는 **each()메서드** 를 사용한다. 두 �
         like:'beer!',
         part: 'computer'
       });
-
       var output=''
       $.each(object,function(key,item){
         output+=key+': '+item+'\n';
@@ -234,7 +233,7 @@ options.valueC=options.valueC || 30;</code></pre>
 
 # 5. jQuery 충돌 방지
 
-    jQuery 이외에도 여러가지 자바스크립트 프레임워크가 있다. 예를 들어, Prototype 프레임워크에서도 $ 식별자를 사용한다. 이를 방지하기 위해 충돌 방지가 필요하다.
+jQuery 이외에도 여러가지 자바스크립트 프레임워크가 있다. 예를 들어, Prototype 프레임워크에서도 $ 식별자를 사용한다. 이를 방지하기 위해 충돌 방지가 필요하다.
 
 
 ## 5.1. noConflict() 메서드
