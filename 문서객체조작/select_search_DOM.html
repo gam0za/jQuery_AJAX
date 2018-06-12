@@ -10,20 +10,52 @@
     $(document).ready(function(){
 
       // filter()메서드의 매개변수로 함수를 넣을 경우
-      $('h3').filter(function(index){
+      $('h2').filter(function(index){
         return index%3==0;
       }).css({
-        backgroundColor:'skyblue',
-        color:'blue'
+        backgroundColor:'skyblue'
       })
 
+      // filter() 메서드 응용
+      $('h3').css('background','hotpink').filter(':even').css('background','pink');
+
+    })
+
+    // 문서 객체 탐색 종료
+    $(document).ready(function(){
+      $('li').css('background','orange').filter(':even').css('color','red').end().filter(':odd').css('color','blue');
+    })
+
+    // parent() 메서드
+    $(document).ready(function(){
+      $('#child').click(function(){
+        $(this).parent().css('background','purple');
+      })
     })
     </script>
   </head>
   <body>
-    <h2>나에게 강아지가 생긴다면 이름은 뭘로 지을까?</h2>
-      <h3>1. 브리트니 점례</h3>
-      <h3>2. 큐리어스 민호</h3>
-      <h3>3. 엘리자베스 순자</h3>
+    <h1>나에게 강아지가 생긴다면 이름은 뭘로 지을까?</h1>
+      <h2>1. 브리트니 점례</h2>
+      <h2>2. 큐리어스 민호</h2>
+      <h2>3. 엘리자베스 순자</h2>
+      <br>
+      <h2>감자는 배가 고파요</h2>
+        <h3>Beer</h3>
+        <h3>Pizza</h3>
+        <h3>Chicken</h3>
+        <h3>PotatoChips</h3>
+        <h3>Gopchang</h3>
+        <br>
+        <ul>
+            <li>Jinyoung</li>
+            <li>Gamza</li>
+            <li>ZZANG</li>
+            <li>Jinyoung</li>
+            <li>Gamza</li>
+            <li>ZZANG</li>
+        </ul>
+
+        <div><h1 id="child">parent() 메서드</h1></div>
   </body>
 </html>
