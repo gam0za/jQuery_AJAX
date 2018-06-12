@@ -77,13 +77,18 @@ each() 메서드 안에서 find() 메서드를 한 번 더 사용해 각각의 �
 
 클릭한 대상의 부모
 
-<pre><code><div><h1 id="child">parent() 메서드</h1></div></code></pre>
+<div><h1 id="child">parent() 메서드</h1></div>
 
 <pre><code>$(document).ready(function(){
     $('#child').click(function(){
       $(this).parent().css('background','purple');
     })
   })</code></pre>
+
+  ## [결과화면]
+    ![Alt text](/문서객체조작/images/parent.PNG)
+
+***
 
 
 # <문서 객체 조작>
