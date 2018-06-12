@@ -151,7 +151,7 @@ each() 메서드 안에서 find() 메서드를 한 번 더 사용해 각각의 �
 
 # 5. 문서 객체의 속성 제거
 
-## removeAttre(name)
+## removeAttr(name)
 
 
 ***
@@ -160,6 +160,7 @@ each() 메서드 안에서 find() 메서드를 한 번 더 사용해 각각의 �
 
 ## css()
 
+***
 
 # 7. 문서 객체의 스타일 추가
 
@@ -182,3 +183,37 @@ $('h3').css('color',function(index){
   },
   backgroundColor:'hotpink'
 });</code></pre>
+
+***
+
+# 8. 문서 객체의 내부 검사
+
+아래의 두 메서드의 차이는 html() 메서드는 HTML 태그를 인식하고, text() 메서드는 HTML 태그를 인식하지 않는다.
+
+또한, text() 메서드는 html() 메서드와 다르게 첫 번째 문서 객체의 글자만 가져오는 것이 아니라, 선택자로 선택한 모든 문서 객체의 글자를 이어서 출력한다.
+
+
+
+## html()
+
+문서 객체 내부의 글자와 관련된 모든 기능 수행 (HTML 태그 인식)
+
+## text()
+
+문서 객체 내부의 글자와 관련된 모든 기능 수행
+
+
+***
+
+
+# 9. 문서 객체의 내부 추가
+
+## 1. $(selector).html(value); 와 $(selector).text(value);
+
+## 2. $(selector).html(function(index,html){}); 와 $(selector).text(function(index,text){});
+
+
+***
+
+
+# 10. 문서 객체 제거
