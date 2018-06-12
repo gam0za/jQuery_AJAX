@@ -230,8 +230,8 @@ $('h3').css('color',function(index){
 
 # 11. 문서 객체 생성
 
-## 1. [$('<h1>Hello World</h1>').appendTo('body');]
+## 1. $('h1태그 Hello World h1태그').appendTo('body');
 
-## 2. [$('<h1></h1>').attr('width',100).appendTo('body');]
+## 2. $('<h1태그></h1태그>').attr('width',100).appendTo('body');
 
-## 3. [$('<h1></h1>',{width:100,  height:50}).appendTo('body');]
+## 3. $('<h1태그></h1태그>',{width:100,  height:50}).appendTo('body');
