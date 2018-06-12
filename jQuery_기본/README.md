@@ -24,7 +24,7 @@ var $ =require('jQuery');</code></pre>
 ## 3. 선택자
 선택자는 jQuery에서 가장 중요한 역할을 한다.
 
-1. 기본 선택자
+### 1. 기본 선택자
 
 <pre><code>$('h1').css('color','red');</code></pre>
 
