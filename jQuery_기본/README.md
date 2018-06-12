@@ -148,7 +148,7 @@ $('div ul').css('color','green');//후손 선택자</code></pre>
 
 jQuery로 배열을 관리할 때는 **each()메서드** 를 사용한다. 두 가지 방법이 존재한다.
 
-## 4.1. $.each(object,function(index,item){}})
+## 4.1. $.each(object,function(index,item){})
 
 
 <pre><code>$(document).ready(function(){
@@ -198,7 +198,7 @@ jQuery로 배열을 관리할 때는 **each()메서드** 를 사용한다. 두 �
       });
       var output=''
       $.each(object,function(key,item){
-        output+=key+': '+item+'\n';
+      output+=key+item+'\n';
       });
       alert(output);
     })
