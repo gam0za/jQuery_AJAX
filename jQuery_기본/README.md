@@ -13,12 +13,12 @@ jQuery는 모든 브라우저에서 동작하는 클라이언트 자바스크립
 ## 2. 다운로드
 <http://jquery.com/>
 
-jQuery는 두 가지 방법으로 사용할 수 있다. 첫번 째 방법은 CDN (Content Delivery Network) 호스트를 사용하는 방법이 있고, 두번 째로 직접 내려받아 사용하는 방법이 있다. 
+jQuery는 두 가지 방법으로 사용할 수 있다. 첫번 째 방법은 CDN (Content Delivery Network) 호스트를 사용하는 방법이 있고, 두번 째로 직접 내려받아 사용하는 방법이 있다.
 
 Node.JS를 이용하여 jQuery를 다운받을 수도 있다.
 <https://www.npmjs.com/package/jQuery/>
 
-<pre><code>npm install jQuery 
+<pre><code>npm install jQuery
 var $ =require('jQuery');</code></pre>
 
 ## 3. 선택자
@@ -28,7 +28,7 @@ var $ =require('jQuery');</code></pre>
 
 * 전체 선택자
 
-*를 사용한 선택자이다. 
+*를 사용한 선택자이다.
 <pre><code>$('*').css('color','red');</code></pre>
 
 
@@ -40,10 +40,10 @@ var $ =require('jQuery');</code></pre>
 
 * 아이디 선택자
 
-특정한 id 속성이 있는 문서 객체를 선택한다. 
+특정한 id 속성이 있는 문서 객체를 선택한다.
 <pre><code>$('#idname').css('color','red');</code></pre>
 
-또는 h1 태그 내의 특정 id 
+또는 h1 태그 내의 특정 id
 <pre><code>$('h1#idname').css('color','red');</code></pre>
 
 
@@ -56,20 +56,11 @@ var $ =require('jQuery');</code></pre>
 <pre><code>$('.classname1.classname2').css('color','red');</code></pre>
 
 
+* 자손 선택자와 후손 선택자
+
+자손 선택자와 후손 선택자는 기본 선택자의 앞에 붙여 사용한다.기본 선택자의 범위를 제한한다.
+<pre><code>$('div>*').css('color','purple');//자손 선택자
+$('div ul').css('color','green');//후손 선택자</code></pre>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* 속성 선택자
