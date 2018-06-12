@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery 충돌 방지</title>
+      <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+      <script>
+      $.noConflict();
+      var J = jQuery; //변수에 저장
+
+      J(document).ready(function(){
+        J('h1').css('color','pink');
+      })
+      </script>
+  </head>
+  <body>
+    <h1>Hello I wanna be a french fries!</h1>
+  </body>
+</html>

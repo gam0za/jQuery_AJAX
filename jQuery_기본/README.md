@@ -181,6 +181,9 @@ jQuery로 배열을 관리할 때는 **each()메서드** 를 사용한다. 두 �
 
 
 
+## 4.3. 객체 확장
+
+
 적은 수의 속성을 추가할 때는 문제가 없지만 많은 수의 속성을 추가하고 싶을 땐, **$.extend()** 메서드가 each()보다 더 효율적이다. extend()메서드는 두 번째 매개변수에 입력한 객체를 기존 객체에 합쳐지도록 한다.
 
 
@@ -197,5 +200,25 @@ jQuery로 배열을 관리할 때는 **each()메서드** 를 사용한다. 두 �
         output+=key+': '+item+'\n';
       });
       alert(output);
+    })
+    </script></code></pre>
+
+
+
+
+
+    # 5. jQuery 충돌 방지
+
+    jQuery 이외에도 여러가지 자바스크립트 프레임워크가 있다. 예를 들어, Prototype 프레임워크에서도 $ 식별자를 사용한다. 이를 방지하기 위해 충돌 방지가 필요하다.
+
+
+    ## 5.1. noConflict() 메서드
+
+    <pre><code><script>
+    $.noConflict();
+    var J = jQuery; //변수에 저장
+
+    J(document).ready(function(){
+      J('h1').css('color','pink');
     })
     </script></code></pre>
