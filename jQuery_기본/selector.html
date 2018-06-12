@@ -22,6 +22,15 @@
 			// 5. 자손/후손 선택자
 			$('div>*').css('color','purple');//자손 선택자
 			$('div ul').css('color','green');//후손 선택자
+
+			// 6. 속성 선택자
+			$('input[type="text"]').val('Hello Gamza!');
+
+			// 7. 필터 선택자
+				var value=$('select > option:selected').val();
+				alert(value); //default로 첫번째 option이 선택되어져 있다.
+
+
 		})
 	</script>
 </head>
@@ -38,5 +47,13 @@
 	<li>후손 선택자3</li>
 </ul>
 </div>
+<input type="text"/>
+<input type="password"/>
+<input type="file"/>
+<select>
+	<option>필터 선택자1</option>
+	<option>필터 선택자2</option>
+	<option>필터 선택자3</option>
+</select>
 </body>
 </html>
