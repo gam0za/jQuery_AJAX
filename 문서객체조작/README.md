@@ -66,7 +66,8 @@ filter() 메서드를 응용
 
 ## find() 메서드
 
-<pre><code>var xmlDoc=$.parseXML(xml); $(xmlDoc).find('friend').each(function(index){});</code><pre>
+<pre><code>var xmlDoc=$.parseXML(xml); 
+$(xmlDoc).find('friend').each(function(index){});</code></pre>
 
 each() 메서드 안에서 find() 메서드를 한 번 더 사용해 각각의 데이터를 추출한다.
 
@@ -84,6 +85,7 @@ each() 메서드 안에서 find() 메서드를 한 번 더 사용해 각각의 �
       $(this).parent().css('background','purple');
     })
   })</code></pre>
+
 
   ## [결과화면]
     ![Alt text](/문서객체조작/images/parent.PNG)
