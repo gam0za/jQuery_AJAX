@@ -149,7 +149,7 @@ jQuery로 배열을 관리할 때는 **each()메서드** 를 사용한다. 두 �
 ## 4.1. $.each(object,function(index,item){}})
 
 
-<pre><code>  $(document).ready(function(){
+<pre><code>$(document).ready(function(){
     var array=[
       {name:'JinyoungKim', like:'PotatoChips'},
       {name:'Gamza', like:'Beer'},
