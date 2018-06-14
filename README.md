@@ -7,7 +7,7 @@
 
 ## [**2. 문서 객체 조작**](https://github.com/gam0za/jQuery_AJAX/tree/master/%EB%AC%B8%EC%84%9C%EA%B0%9D%EC%B2%B4%EC%A1%B0%EC%9E%91)
 
-## [**3. 이벤트**]
+## [**3. 이벤트**](https://github.com/gam0za/jQuery_AJAX/tree/master/Event)
 
 ## [**4. 효과**]
 
