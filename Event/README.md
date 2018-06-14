@@ -51,7 +51,7 @@ document 객체에 ready 이벤트를 연결
 				$(this).removeClass('reverse');
 			});</code></pre>
 
-			***
+***
 
 
 # 4. 이벤트 연결 제거
