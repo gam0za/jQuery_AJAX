@@ -1,0 +1,38 @@
+<!--  -->
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.jy{
+			background-color : hotpink;
+		}
+	</style>
+	<title>시각 효과</title>
+	<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('h1').hover(function(){
+				$('h2').fadeToggle();
+			})
+		})
+
+		// 사용자 지정 애니메이션
+		$('div').click(function(){
+			$('#custom').animate({
+				right:500
+			},slow)
+		})
+		
+	</script>	
+</head>
+<body>
+	<h1>
+		HELLO JINYOUNG
+	</h1>
+	<h2>Jinyoung~!</h2>
+
+	<div class="jy">
+		<h1 id="custom">사용자 지정 애니메이션</h1>
+	</div>
+</body>
+</html>
