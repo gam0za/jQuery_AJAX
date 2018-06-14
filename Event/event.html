@@ -2,14 +2,42 @@
 <html>
 <head>
 	<title>이벤트</title>
-	<script src="http://code.jquery.com/jquery-3.1.1.js"></script>ㅊ
+	<style type="text/css">
+		.reverse{
+			background: pink;
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
 	<script>
-		$(document).ready(function(event){
+		//on() 메서드 이용
+		$(document).ready(function(){
+			$('h1').on('click',function(){
+				$(this).html(function(index,html){
+					return html+ '+';
+				})
+			})
+
+			$('h2').on({
+				mouseenter:function(){$(this).addClass('reverse')},
+				mouseleave:function(){$(this).removeClass('reverse')}
+			})
+
+			// 간단한 이벤트 연결 hover에 mouseenter과 mouseleave 리스너를 넣어준다.
+			// $('h3').hover(function(){},function(event){})
+			$('h3').hover(function(){
+				$(this).addClass('reverse');
+			}, function(){
+				$(this).removeClass('reverse');
+			});
+
 			
+
 		})
 	</script>
 </head>
 <body>
-
+<h1>Hello Jinyoung</h1>
+<h2>HELLO</h2>
+<h3>간단한 이벤트 연결</h3>
 </body>
 </html>
