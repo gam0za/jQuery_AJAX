@@ -38,7 +38,7 @@ filter() 메서드를 응용
 <pre><code>$('h3').css('background','hotpink').filter(':even').css('background','pink');</code></pre>
 
 [결과화면]
-  ![Alt text](/문서객체조작/images/filter.PNG)
+![Alt text](/문서객체조작/images/filter.PNG)
 
 
 ***
@@ -50,7 +50,7 @@ filter() 메서드를 응용
 <pre><code>$('li').css('background','orange').filter(':even').css('color','red').end().filter(':odd').css('color','blue');</code></pre>
 
 [결과화면]
-  ![Alt text](/문서객체조작/images/end.PNG)
+![Alt text](/문서객체조작/images/end.PNG)
 
 
 
@@ -88,7 +88,7 @@ each() 메서드 안에서 find() 메서드를 한 번 더 사용해 각각의 �
 
 
   ## [결과화면]
- ![Alt text](/문서객체조작/images/parent.PNG)
+![Alt text](/문서객체조작/images/parent.PNG)
 
 ***
 
