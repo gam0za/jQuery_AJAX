@@ -9,7 +9,11 @@
 
 ### [**3. 이벤트**](https://github.com/gam0za/jQuery_AJAX/tree/master/Event)
 
+<<<<<<< HEAD
 ### [**4. 효과**]
+=======
+## [**4. 효과**](https://github.com/gam0za/jQuery_AJAX/tree/master/Animation)
+>>>>>>> d82aed4f1dbd23b911d5a41b6c494b21b6abdff1
 
 ### [**5. 이미지슬라이더 및 플러그인**]
 
