@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>XMLHttpRequest</title>
+</head>
+<body>
+	<script>
+		var request=new XMLHttpRequest();
+		request.open('GET','./data.html',false);
+
+		request.send();
+
+		document.body.innerHTML+=request.responseText;
+	</script>
+</body>
+</html>

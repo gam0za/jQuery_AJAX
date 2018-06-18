@@ -33,6 +33,7 @@ var items=[{
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({extended:false}))
 
+
 // get
 app.get('/products',function(req,res){
 	res.send(items)
