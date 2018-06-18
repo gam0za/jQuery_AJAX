@@ -57,12 +57,12 @@ app.post('/products',function(req,res){
 
 	res.send({
 		message:"success",
-		data:item
+		data:items
 	})
 })
 
 // put (데이터 수정)
-app.put('/put/:id',function(req,res){
+app.put('/products/:id',function(req,res){
 	var id=Number(req.params.id);
 	var name=req.body.name;
 	var price=req.body.price;

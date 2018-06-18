@@ -1,18 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>AJAX 연습</title>
+	<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+	<script>
+		<!-- success속성은 이벤트이다 -->
+
+		$(document).ready(function(){
+			// get
+			$('#get').click(function(){
+				$.ajax({
+					url:'/products',
+					type:'get',
+					dataType:'text',
+					success:function(data){
+						$('#output').val(data);
+					}
+				})
+			})
+
+			// post
+			$('#post').click(function(){
+				$.ajax({
+					url:'/products',
+					type:'post',
+					dataType:'text',
+					data:{
+						name:$('#name').val(),
+						price:$('#price').val()
+					},
+					success:function(data){
+						$('#output').val(data);
+					}
+				})
+			})
+			// put
+			$('#put').click(function(){
+				$.ajax({
+					url:'products/1',
+					type:'put',
+					dataType:'text',
+					data:{
+						name:$('#name').val(),
+						price:$('#price').val()
+					},
+					success:function(data){
+						$('#output').val(data);
+					}
+				})
+			})
+			// delete
+			$('#delete').click(function(){
+				$.ajax({
+					url:'delete/1',
+					type:'delete',
+					dataType:'text',
+					success:function(data){
+						$('#output').val(data);
+					}
+				})
+			})
+
+		})
+		
+	</script>
 </head>
 <body>
-<h1>정적파일~</h1>
+<button id="get">get</button>
+<button id="post">post</button>
+<button id="put">put</button>
+<button id="delete">delete</button>
 
-<form action="/products" method="get" accept-charset="utf-8">
-	<input type="submit" value="get" name="get">
-</form>
-<form action="/products" method="post" accept-charset="utf-8">
-	<input type="text" name="name">
-	<input type="text" name="price">
-	<input type="submit" value="post" name="submit">
-</form>
+<h1>
+<input type="text" name="name" id="name">
+<input type="text" name="price" id="price">
+</h1>
+
+<h1>
+<textarea name="output" id="output" cols="40" rows="5"></textarea>
+</h1>
 </body>
 </html>
